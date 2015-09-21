@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"module": "commonjs",
+		"target": "ES5",
+		"sourceMap": true
+	},
+	"files": [
+		"./typings/tsd.d.ts",
+		"./main.ts"
+	]
+}
