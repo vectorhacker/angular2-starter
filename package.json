@@ -24,5 +24,8 @@
       "core-js": "npm:core-js@^1.1.4",
       "typescript": "npm:typescript@^1.6.2"
     }
+  },
+  "dependencies": {
+    "typescript": "^1.6.2"
   }
 }

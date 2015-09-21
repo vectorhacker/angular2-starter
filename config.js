@@ -20,6 +20,7 @@ System.config({
     "core-js": "npm:core-js@1.1.4",
     "es6-shim": "github:es-shims/es6-shim@0.33.3",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
+    "typescript": "npm:typescript@1.6.2",
     "zone.js": "npm:zone.js@0.5.5",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"

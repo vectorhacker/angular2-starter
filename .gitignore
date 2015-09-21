@@ -1,4 +1,4 @@
-./node_modules
-./jspm_packages
-./src/**/*.js
-./src/**/*.js.map
+node_modules
+jspm_packages
+src/**/*.js
+src/**/*.js.map
