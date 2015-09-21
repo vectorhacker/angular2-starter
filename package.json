@@ -4,12 +4,17 @@
   "description": "A starting point for all your angular 2.0.0-alpha-37 projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-jspm": "./node_modules/jspm/jspm.js install",
+    "compile:typescript": "./node_modules/typescript/bin/tsc -w -p src",
+    "live-server": "./node_modules/live-server/live-server.js"
   },
   "author": "Victor A. Martinez <victor.martinez@upr.edu>",
   "license": "MIT",
   "devDependencies": {
-    "jspm": "^0.16.6"
+    "jspm": "^0.16.6",
+    "live-server": "^0.8.1",
+    "typescript": "^1.6.2"
   },
   "jspm": {
     "dependencies": {
