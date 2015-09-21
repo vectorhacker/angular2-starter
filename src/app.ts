@@ -2,6 +2,7 @@ import {Component, View, bootstrap, bind} from 'angular2/angular2';
 import {RouteConfig, ROUTER_BINDINGS, LocationStrategy, HashLocationStrategy, RouterLink, Location, Router, RouterOutlet} from 'angular2/router';
 import {HTTP_BINDINGS} from 'angular2/http';
 
+import { AboutPage } from './components/AboutPage/AboutPage';
 
 @Component({
 	selector: 'home'
@@ -10,18 +11,6 @@ import {HTTP_BINDINGS} from 'angular2/http';
 	template: 'Home'
 })
 class Index {
-	constructor() {
-		
-	}
-}
-
-@Component({
-	selector: 'about'
-})
-@View({
-	template: 'About'
-})
-class About {
 	constructor() {
 		
 	}
