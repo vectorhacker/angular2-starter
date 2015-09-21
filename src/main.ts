@@ -1,3 +1,6 @@
+/// <reference path="typings/tsd.d.ts" />
+
+
 // dependencies
 import 'zone.js';
 import 'reflect-metadata';
