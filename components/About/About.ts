@@ -5,7 +5,7 @@ import {RouteParams} from 'angular2/router';
 	selector: 'about'
 })
 @View({
-	templateUrl: './templates/About.html',
+	templateUrl: './components/About/About.html',
 	directives: [NgIf]
 })
 export class About {

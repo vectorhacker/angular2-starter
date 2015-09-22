@@ -8,4 +8,9 @@ import 'reflect-metadata';
 // app
 import main from './app';
 
-main();
+// build html
+import html from './html';
+
+html(() => {
+	main();
+});

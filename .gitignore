@@ -1,5 +1,6 @@
 node_modules
 jspm_packages
-src/**/*.js
-src/**/*.js.map
-dist
+**/*.js
+**/*.js.map
+!config.js
+build

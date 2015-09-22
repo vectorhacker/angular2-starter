@@ -5,9 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-jspm": "./node_modules/jspm/jspm.js install",
-    "compile:typescript": "./node_modules/typescript/bin/tsc -w -p src",
-    "live-server": "./node_modules/live-server/live-server.js"
+    "install:jspm": "./node_modules/jspm/jspm.js install",
+    "build:typescript": "./node_modules/typescript/bin/tsc",
+    "watch:typescript": "./node_modules/typescript/bin/tsc -w",
+    "build:jspm": "./node_modules/jspm/jspm.js bundle main.js ./build/app.js --inject --minify --skip-source-maps",
+    "build:move": "cp main.html build/; cp jspm_packages/system-csp-production.js build/lib/; cp -r components build/; cp build.index.html ./build/index.html; cp text.js build/lib/;",
+    "build": "rm -rf build; mkdir -p build/lib; npm run build:typescript; npm run build:jspm; npm run build:move",
+    "dev:live-server": "./node_modules/live-server/live-server.js",
+    "prod:live-server": "cd build; ../node_modules/live-server/live-server.js"
   },
   "author": "Victor A. Martinez <victor.martinez@upr.edu>",
   "license": "MIT",
@@ -19,6 +24,7 @@
   "jspm": {
     "dependencies": {
       "angular2": "npm:angular2@^2.0.0-alpha.37",
+      "crypto": "github:jspm/nodelibs-crypto@^0.1.0",
       "es6-shim": "github:es-shims/es6-shim@^0.33.3",
       "reflect-metadata": "npm:reflect-metadata@^0.1.2",
       "zone.js": "npm:zone.js@^0.5.5"
@@ -28,6 +34,10 @@
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4",
       "typescript": "npm:typescript@^1.6.2"
+    },
+    "buildConfig": {
+      "transpileES6": true,
+      "minify": true
     }
   },
   "dependencies": {
