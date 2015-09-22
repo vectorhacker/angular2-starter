@@ -3,6 +3,7 @@ jspm_packages
 **/*.js
 **/*.js.map
 !js/*.js
+!js
 !templates
 !components
 !config.js
