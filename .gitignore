@@ -2,5 +2,8 @@ node_modules
 jspm_packages
 **/*.js
 **/*.js.map
+!js/*.js
+!templates
+!components
 !config.js
 build
