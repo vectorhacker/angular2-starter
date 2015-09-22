@@ -26,7 +26,6 @@ import { Home } from './components/Home/Home';
 class Starter {
 	
 }
-
 export default function main() {
 	// add bindings here
 	bootstrap(Starter, [HTTP_BINDINGS, ROUTER_BINDINGS, bind(LocationStrategy).toClass(HashLocationStrategy)]);
