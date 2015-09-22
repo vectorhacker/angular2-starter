@@ -18,7 +18,7 @@ import { Home } from './components/Home/Home';
 		<router-outlet></router-outlet>
 	`,
 	directives: [RouterLink, RouterOutlet]
-}
+})
 @RouteConfig([
 	{path: '/', component: Home, as: 'home'},
 	{path: '/about/:page', component: About, as: 'about'}
