@@ -23,7 +23,7 @@ Development consits of completeting a few steps.
 3. Code! Your changes will automatically be reflected in the browser once yous save. If you need to add
 4. Templates and Angular 2 components should be in the components.
 
-5. CSS files should be in ./css or ./components/**/*.css and then added to ,./css/main.css via a @import statement, this is not automatic, yet.
+5. CSS files should be in ./css or ./components/\*\*/\*.css and then added to ,./css/main.css via a @import statement, this is not automatic, yet.
 
 6. Images go in ./images
 
