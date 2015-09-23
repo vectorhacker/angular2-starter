@@ -2,7 +2,7 @@
 
 ## Description 
 
-This is a seed project or template for your Angular 2 projects. Source code is based on TypeScript 2.0 and uses npm and jspm to handle dependencies. 
+This is a seed project or template for your Angular 2 projects. Source code is based on TypeScript and uses npm and jspm to handle dependencies. 
 
 ## Install dependencies
 
