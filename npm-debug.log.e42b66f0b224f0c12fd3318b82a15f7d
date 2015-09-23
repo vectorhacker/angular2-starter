@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/4.1.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'build:typescript' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.0
+4 verbose run-script [ 'prebuild:typescript',
+4 verbose run-script   'build:typescript',
+4 verbose run-script   'postbuild:typescript' ]
+5 info prebuild:typescript angular2-starter@0.0.1
+6 info build:typescript angular2-starter@0.0.1
+7 verbose unsafe-perm in lifecycle true
+8 verbose stack Error: write EPIPE
+8 verbose stack     at Object.exports._errnoException (util.js:837:11)
+8 verbose stack     at exports._exceptionWithHostPort (util.js:860:20)
+8 verbose stack     at WriteWrap.afterWrite (net.js:760:14)
+9 verbose cwd /Users/vectorhacker/Projects/angular2-starter
+10 error Darwin 14.5.0
+11 error argv "/usr/local/Cellar/node/4.1.0/bin/node" "/usr/local/bin/npm" "run" "build:typescript"
+12 error node v4.1.0
+13 error npm  v2.14.4
+14 error code EPIPE
+15 error errno EPIPE
+16 error syscall write
+17 error write EPIPE
+18 error If you need help, you may report this error at:
+18 error     <https://github.com/npm/npm/issues>
+19 verbose exit [ 1, true ]

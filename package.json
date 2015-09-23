@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install:dep": "npm install; npm run install:jspm",
-    "install:jspm": "./node_modules/jspm/jspm.js install",
-    "build:typescript": "./node_modules/typescript/bin/tsc",
-    "watch:typescript": "./node_modules/typescript/bin/tsc -w",
-    "build:jspm": "./node_modules/jspm/jspm.js bundle main.js ./build/app.js --inject --minify --skip-source-maps",
+    "install:dep": "node ./scripts/install.js",
+    "install:jspm": "node ./node_modules/jspm/jspm.js install",
+    "build:typescript": "node ./node_modules/typescript/bin/tsc",
+    "watch:typescript": "node ./node_modules/typescript/bin/tsc -w",
+    "build:jspm": "node ./node_modules/jspm/jspm.js bundle main.js ./build/app.js --inject --minify --skip-source-maps",
     "build:move": "cp main.html build/; cp jspm_packages/system-csp-production.js build/lib/; cp -r components build/; cp build.index.html ./build/index.html; cp text.js build/lib/;",
-    "build": "npm run clean:build; mkdir -p build/lib; cp config.js old.config.js; npm run build:typescript; npm run build:jspm; npm run build:move; rm config.js; mv old.config.js config.js; cp -r css build/; cp -r images build/; cp -rf js build/; cp -r templates build/",
+    "build:unix": "npm run clean:build; mkdir -p build/lib; cp config.js old.config.js; npm run build:typescript; npm run build:jspm; npm run build:move; rm config.js; mv old.config.js config.js; cp -r css build/; cp -r images build/; cp -rf js build/; cp -r templates build/",
+    "build:windows": "node ./scripts/build.js",
     "clean:build": "rm -rf build",
-    "dev:live-server": "./node_modules/live-server/live-server.js",
+    "dev:live-server": "node ./node_modules/live-server/live-server.js",
     "prod:live-server": "cd build; ../node_modules/live-server/live-server.js"
   },
   "author": "Victor A. Martinez <victor.martinez@upr.edu>",
@@ -43,6 +44,7 @@
     }
   },
   "dependencies": {
+    "fs-extra": "^0.24.0",
     "typescript": "^1.6.2"
   }
 }
