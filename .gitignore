@@ -8,3 +8,4 @@ jspm_packages
 !components
 !config.js
 build
+!scripts/*.js
