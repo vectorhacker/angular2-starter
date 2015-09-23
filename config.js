@@ -281,6 +281,7 @@ System.config({
     "core-js": "npm:core-js@1.1.4",
     "crypto": "github:jspm/nodelibs-crypto@0.1.0",
     "es6-shim": "github:es-shims/es6-shim@0.33.3",
+    "normalize.css": "github:necolas/normalize.css@3.0.3",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "text": "./text.js",
     "typescript": "npm:typescript@1.6.2",
@@ -317,6 +318,9 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "github:necolas/normalize.css@3.0.3": {
+      "css": "github:systemjs/plugin-css@0.1.17"
     },
     "npm:angular2@2.0.0-alpha.37": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
