@@ -4,29 +4,19 @@
   "description": "A starting point for all your angular 2 projects.",
   "author": "Victor A. Martinez <victor.martinez@upr.edu>",
   "license": "MIT",
+  "repository": "https://github.com/vectorhacker/angular2-starter.git",
   "devDependencies": {
     "delete": "^0.2.1",
     "gulp": "^3.9.0",
-    "gulp-clean-dest": "^0.1.0",
     "gulp-concat-css": "^2.2.0",
     "gulp-imagemin": "^2.3.0",
     "gulp-inject": "^3.0.0",
     "gulp-jsmin": "^0.1.5",
     "gulp-jspm": "^0.2.4",
-    "gulp-live-server": "0.0.28",
-    "gulp-livereload": "^3.8.1",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-typescript": "^2.9.0",
     "live-server": "^0.8.1",
-    "node-delete": "^0.1.1",
-    "typescript": "^1.6.2"
-  },
-  "dependencies": {
-    "angular2": "^2.0.0-alpha.37",
-    "es6-module-loader": "^0.17.8",
-    "systemjs": "^0.19.3",
-    "traceur": "0.0.91",
     "typescript": "^1.6.2"
   },
   "jspm": {
