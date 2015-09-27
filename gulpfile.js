@@ -144,7 +144,7 @@ gulp.task('build.dev', ['compile.typescript', 'jspm.dev', 'inject.dev']);
 
 gulp.task('watch.dev', ['build.dev'], function () {
   liveServer.start(params);
-  gulp.watch(['./**/*.ts'], ['build.dev'])
+  gulp.watch(['./**/*.ts', './templates/**/*.html', './components/**/*.html'], ['build.dev'])
 });
 
 // end development tasks

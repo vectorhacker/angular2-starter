@@ -13,7 +13,7 @@ import { Home } from './components/Home/Home';
 	selector: 'starter'
 })
 @View({
-	templateUrl: 'templates/main.html',
+	templateUrl: './templates/main.html',
 	directives: [RouterLink, RouterOutlet]
 })
 @RouteConfig([
