@@ -4,7 +4,10 @@
   "description": "A starting point for all your angular 2 projects.",
   "author": "Victor A. Martinez <victor.martinez@upr.edu>",
   "license": "MIT",
-  "repository": "https://github.com/vectorhacker/angular2-starter.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vectorhacker/angular2-starter.git"
+  },
   "devDependencies": {
     "delete": "^0.2.1",
     "gulp": "^3.9.0",
