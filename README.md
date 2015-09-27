@@ -8,7 +8,7 @@ This is a seed project or template for your Angular 2 projects. Source code is b
 
 To be able to start development you need to install a few dependencies. To do so, make sure you have [Node.js](http://nodejs.org) installed. Once you have that, open a terminal in the project folder and run this command:
 
-```bash
+```
 npm install # Install run dependencies
 npm install -g gulp tsd jspm
 jspm install # Install build dependencies
