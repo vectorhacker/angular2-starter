@@ -1,4 +1,5 @@
 System.config({
+  baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
@@ -6,10 +7,6 @@ System.config({
       "runtime",
       "optimisation.modules.system"
     ]
-  },
-  typescriptOptions: {
-    "module": "commonjs",
-    "emitDecoratorMetadata": true
   },
   paths: {
     "github:*": "jspm_packages/github/*",
@@ -19,14 +16,12 @@ System.config({
   map: {
     "angular2": "npm:angular2@2.0.0-alpha.37",
     "babel": "npm:babel-core@5.8.25",
-    "babel-runtime": "npm:babel-runtime@5.8.24",
-    "core-js": "npm:core-js@1.1.4",
+    "babel-runtime": "npm:babel-runtime@5.8.25",
+    "core-js": "npm:core-js@1.2.0",
     "crypto": "github:jspm/nodelibs-crypto@0.1.0",
     "es6-shim": "github:es-shims/es6-shim@0.33.3",
     "normalize.css": "github:necolas/normalize.css@3.0.3",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
-    "text": "./text.js",
-    "typescript": "npm:typescript@1.6.2",
     "zone.js": "npm:zone.js@0.5.5",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -52,6 +47,9 @@ System.config({
     "github:jspm/nodelibs-stream@0.1.0": {
       "stream-browserify": "npm:stream-browserify@1.0.0"
     },
+    "github:jspm/nodelibs-string_decoder@0.1.0": {
+      "string_decoder": "npm:string_decoder@0.10.31"
+    },
     "github:jspm/nodelibs-url@0.1.0": {
       "url": "npm:url@0.10.3"
     },
@@ -62,7 +60,7 @@ System.config({
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
     "github:necolas/normalize.css@3.0.3": {
-      "css": "github:systemjs/plugin-css@0.1.17"
+      "css": "github:systemjs/plugin-css@0.1.18"
     },
     "npm:angular2@2.0.0-alpha.37": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
@@ -85,17 +83,18 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:babel-runtime@5.8.24": {
+    "npm:babel-runtime@5.8.25": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:browserify-aes@1.0.3": {
+    "npm:browserify-aes@1.0.4": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
-      "buffer-xor": "npm:buffer-xor@1.0.2",
+      "buffer-xor": "npm:buffer-xor@1.0.3",
       "create-hash": "npm:create-hash@1.1.1",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "inherits": "npm:inherits@2.0.1",
       "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "string_decoder": "github:jspm/nodelibs-string_decoder@0.1.0",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:browserify-rsa@2.0.1": {
@@ -117,7 +116,7 @@ System.config({
       "parse-asn1": "npm:parse-asn1@3.0.1",
       "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
-    "npm:buffer-xor@1.0.2": {
+    "npm:buffer-xor@1.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
@@ -129,7 +128,7 @@ System.config({
     "npm:constants-browserify@0.0.1": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
-    "npm:core-js@1.1.4": {
+    "npm:core-js@1.2.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
@@ -160,7 +159,7 @@ System.config({
       "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
     "npm:crypto-browserify@3.9.14": {
-      "browserify-aes": "npm:browserify-aes@1.0.3",
+      "browserify-aes": "npm:browserify-aes@1.0.4",
       "browserify-sign": "npm:browserify-sign@3.0.8",
       "create-ecdh": "npm:create-ecdh@2.0.1",
       "create-hash": "npm:create-hash@1.1.1",
@@ -201,7 +200,7 @@ System.config({
     },
     "npm:parse-asn1@3.0.1": {
       "asn1.js": "npm:asn1.js@2.2.1",
-      "browserify-aes": "npm:browserify-aes@1.0.3",
+      "browserify-aes": "npm:browserify-aes@1.0.4",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.1",
       "pbkdf2": "npm:pbkdf2@3.0.4",
