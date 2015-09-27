@@ -13,15 +13,7 @@ import { Home } from './components/Home/Home';
 	selector: 'starter'
 })
 @View({
-	template: `
-		<h1>Angular 2 Starter Kit</h1>
-		<div>
-			Something new
-			<a [router-link]=['/home']>HOME</a>
-			<a [router-link]="['/about', {page: 'Welcome'}]">ABOUT</a>
-		</div>
-		<router-outlet></router-outlet>
-	`,
+	templateUrl: 'templates/main.html',
 	directives: [RouterLink, RouterOutlet]
 })
 @RouteConfig([
