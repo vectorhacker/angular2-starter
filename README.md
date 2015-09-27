@@ -28,3 +28,7 @@ Once you're done developing, you can create a production version of your project
 # Extending
 
 This project uses gulp as a build system, so to add more taskss imply edit the gulpfile.js
+
+# Notes on typescript 
+
+This project has a tsconfig.json, when you create a new typescript file remember to add them to the files array property or else your project might not compile.
