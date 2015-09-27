@@ -7,5 +7,5 @@ jspm_packages
 !templates
 !components
 !config.js
+!gulpfile.js
 build
-!scripts/*.js

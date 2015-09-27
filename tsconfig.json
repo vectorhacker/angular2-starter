@@ -8,6 +8,8 @@
 	},
 	"files": [
 		"./typings/tsd.d.ts",
-		"./main.ts"
+		"./main.ts",
+		"./components/About/About.ts",
+		"./components/Home/Home.ts"
 	]
 }

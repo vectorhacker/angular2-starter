@@ -2,7 +2,7 @@ import {Component, View, bootstrap, bind, NgIf} from 'angular2/angular2';
 import {RouteParams} from 'angular2/router';
 
 @Component({
-	selector: 'about'
+	selector: 'none'
 })
 @View({
 	templateUrl: './components/About/About.html',
