@@ -2,7 +2,7 @@
 
 ## Description 
 
-This is a seed project or template for your Angular 2 projects. Source code is based on TypeScript and uses npm and jspm to handle dependencies as well as gulp to build. 
+This is a seed project or template for your Angular 2 projects. Source code is based on TypeScript and uses npm to handle dependencies
 
 ## Install dependencies
 
@@ -10,7 +10,7 @@ To be able to start development you need to install a few dependencies. To do so
 
 ```bash
 npm install # Install run dependencies
-npm install -g tsd tsc lite-server
+npm install -g tsd tsc lite-server # to compile and run
 ```
 This command will run all scripts that are needed to install dependencies, including npm and jspm dependencies needed in order to compile and build the project.
 
